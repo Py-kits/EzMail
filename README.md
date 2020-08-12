@@ -1,0 +1,2 @@
+# EzMail
+Automatic mail updater
