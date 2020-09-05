@@ -19,30 +19,42 @@ import tkinter as tk
 
 #def Importn_tab()
 
-#def Refresh_tab()
-
-
-
 EzWindow = tk.Tk()
 EzWindow.geometry('600x500')
 EzWindow.title("EzMail")
 
-button = tk.Button (
-	text="Refresh emails",
+EzWindow.configure(bg = '#B8E6FF') 
+
+
+btn_Inbox = tk.Button (
+	text="Inbox",
 	width=20,
-	height=5,
-	fg="White",	
-	bg="blue"
+	height=5
 )
 
-mail_buttons = tk.Frame(EzWindow)
+btn_Spam = tk.Button (
+	text="Spam",
+	width=20,
+	height=5
+)
 
 
-btn_Inbox = tk.Button (mail_buttons, text="Inbox")
-btn_Spam = tk.Button (mail_buttons, text="Spam")
-btn_Important = tk.Button (mail_buttons, text="Important")
-btn_Trash = tk.Button (mail_buttons, text="Trash")
-btn_Refresh = tk.Button (mail_buttons, text="Refresh")
+btn_Important = tk.Button (
+	text="Important",
+	width=20,
+	height=5
+)
+
+btn_Trash = tk.Button (
+	text="Trash",
+	width=20,
+	height=5
+)
+
+btn_Inbox.pack(side="left")
+btn_Spam.pack(side="left")
+btn_Important.pack(side="left")
+btn_Trash.pack(side="left")
 
 
 EzWindow.mainloop()
